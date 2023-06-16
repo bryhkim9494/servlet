@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.List;
 
 @WebServlet(name = "memberSaveServlet", urlPatterns = "/servlet/members/save")
 public class MemberSaveServlet extends HttpServlet {
@@ -34,9 +35,9 @@ public class MemberSaveServlet extends HttpServlet {
                 "<body>\n" +
                 "성공\n" +
                 "<ul>\n" +
-                "    <li>id=" + member.getId() + "</li>\n" +
-                "    <li>username=" + member.getUsername() + "</li>\n" +
-                "    <li>age=" + member.getAge() + "</li>\n" +
+                "    <li>id="+member.getId()+"</li>\n" +
+                "    <li>username="+member.getUsername()+"</li>\n" +
+                "    <li>age="+member.getAge()+"</li>\n" +
                 "</ul>\n" +
                 "<a href=\"/index.html\">메인</a>\n" +
                 "</body>\n" +
